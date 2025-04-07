@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form>
+	<form method="post">
 		<label for="name">Name:</label>
   <input type="text" id="name" name="name" required>
 		
@@ -15,8 +15,16 @@
 		<label for="email">Email</label>
 		<input type="email" id="email" required>
 		<br>
-		<label for ="gender">Gender</label>
-		<input type="radio" id="gender" name="Gender" required>
+		<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label><br>
+
 		<br>
 		<label for="cars">Car Brands</label>
 		<select name="cars" id="cars">
@@ -32,12 +40,11 @@
 		<label for="dop">Date of Purchase</label>
 		<input type="date" id="dop" name="date" required>
 		<br>
-		<label for="dop">Password</label>
+		<label for="password">Password:</label>
 		<input type="password" id="password" name="password" required>
 		<br>
 		<label for="button">Submit Button</label>
-		<input type="button" id="button" name="button" required>
-		<br>
+		<button type="submit">Submit</button>
 		
 	</form>
 	<!-- the entire body must be written by student -->
